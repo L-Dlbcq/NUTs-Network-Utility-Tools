@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>acorn(1).ico</ApplicationIcon>
+    <PackageId>$(AssemblyName) - Network Utility Tools</PackageId>
+    <Authors>Louis DOLBECQ</Authors>
+    <Product>$(AssemblyName) - Network Utility Tools</Product>
+    <Description>Tired of typing commands to see your network settings ? Tired of opening all network settings to change your IP address ? With Network Utility Tools, all of that is a thing of the past ! Easily view or change your network settings and with its ergonomic interface, you will not be lost ! Available in French or English now for free. </Description>
+    <Copyright>©2022 DOLBECQ Louis </Copyright>
+    <PackageProjectUrl>https://github.com/L-Dlbcq/NUTs-Network-Utility-Tools</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/L-Dlbcq/NUTs-Network-Utility-Tools</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>network-tools</PackageTags>
+    <AssemblyVersion>1.0</AssemblyVersion>
+    <FileVersion>1.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="acorn(1).ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialSkin.2" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
