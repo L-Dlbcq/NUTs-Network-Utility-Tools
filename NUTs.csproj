@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <ApplicationIcon>acorn(1).ico</ApplicationIcon>
+    <ApplicationIcon>NUTs logo.ico</ApplicationIcon>
     <PackageId>$(AssemblyName) - Network Utility Tools</PackageId>
     <Authors>Louis DOLBECQ</Authors>
     <Product>$(AssemblyName) - Network Utility Tools</Product>
@@ -16,12 +16,21 @@
     <RepositoryUrl>https://github.com/L-Dlbcq/NUTs-Network-Utility-Tools</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>network-tools</PackageTags>
-    <AssemblyVersion>1.0</AssemblyVersion>
-    <FileVersion>1.0</FileVersion>
+    <AssemblyVersion>1.1</AssemblyVersion>
+    <FileVersion>1.1</FileVersion>
+    <PackageIcon>NUTs logo.png</PackageIcon>
+    <AssemblyName>$(MSBuildProjectName) - Network Utility Tool</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="acorn(1).ico" />
+    <Content Include="NUTs logo.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\Pictures\NUTs logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
