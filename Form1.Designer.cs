@@ -76,7 +76,7 @@
             this.themes_menuItem});
             this.nuts_menu.Location = new System.Drawing.Point(3, 64);
             this.nuts_menu.Name = "nuts_menu";
-            this.nuts_menu.Size = new System.Drawing.Size(643, 24);
+            this.nuts_menu.Size = new System.Drawing.Size(647, 24);
             this.nuts_menu.TabIndex = 0;
             this.nuts_menu.Text = "menuStrip1";
             // 
@@ -135,7 +135,7 @@
             this.nuts_tabSlctr.Location = new System.Drawing.Point(3, 91);
             this.nuts_tabSlctr.MouseState = MaterialSkin.MouseState.HOVER;
             this.nuts_tabSlctr.Name = "nuts_tabSlctr";
-            this.nuts_tabSlctr.Size = new System.Drawing.Size(643, 48);
+            this.nuts_tabSlctr.Size = new System.Drawing.Size(648, 48);
             this.nuts_tabSlctr.TabIndex = 1;
             this.nuts_tabSlctr.Text = "TabSelector";
             // 
@@ -149,7 +149,7 @@
             this.nuts_tabCtrl.Multiline = true;
             this.nuts_tabCtrl.Name = "nuts_tabCtrl";
             this.nuts_tabCtrl.SelectedIndex = 0;
-            this.nuts_tabCtrl.Size = new System.Drawing.Size(643, 368);
+            this.nuts_tabCtrl.Size = new System.Drawing.Size(648, 372);
             this.nuts_tabCtrl.TabIndex = 2;
             // 
             // netsettings_tabCtrl
@@ -168,7 +168,7 @@
             this.netsettings_tabCtrl.Location = new System.Drawing.Point(4, 24);
             this.netsettings_tabCtrl.Name = "netsettings_tabCtrl";
             this.netsettings_tabCtrl.Padding = new System.Windows.Forms.Padding(3);
-            this.netsettings_tabCtrl.Size = new System.Drawing.Size(635, 340);
+            this.netsettings_tabCtrl.Size = new System.Drawing.Size(640, 344);
             this.netsettings_tabCtrl.TabIndex = 0;
             this.netsettings_tabCtrl.Text = "Your network settings";
             this.netsettings_tabCtrl.UseVisualStyleBackColor = true;
@@ -181,7 +181,7 @@
             this.retrieve_btn.Depth = 0;
             this.retrieve_btn.HighEmphasis = true;
             this.retrieve_btn.Icon = null;
-            this.retrieve_btn.Location = new System.Drawing.Point(200, 279);
+            this.retrieve_btn.Location = new System.Drawing.Point(202, 282);
             this.retrieve_btn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.retrieve_btn.MouseState = MaterialSkin.MouseState.HOVER;
             this.retrieve_btn.Name = "retrieve_btn";
@@ -626,7 +626,7 @@
             this.changenetsettings_tabCtrl.Location = new System.Drawing.Point(4, 24);
             this.changenetsettings_tabCtrl.Name = "changenetsettings_tabCtrl";
             this.changenetsettings_tabCtrl.Padding = new System.Windows.Forms.Padding(3);
-            this.changenetsettings_tabCtrl.Size = new System.Drawing.Size(635, 340);
+            this.changenetsettings_tabCtrl.Size = new System.Drawing.Size(640, 344);
             this.changenetsettings_tabCtrl.TabIndex = 1;
             this.changenetsettings_tabCtrl.Text = "Change your network settings";
             this.changenetsettings_tabCtrl.UseVisualStyleBackColor = true;
@@ -1090,20 +1090,20 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(649, 519);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(653, 495);
             this.Controls.Add(this.nuts_tabCtrl);
             this.Controls.Add(this.nuts_tabSlctr);
             this.Controls.Add(this.nuts_menu);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.nuts_menu;
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(653, 495);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(653, 495);
             this.Name = "MainForm";
+            this.Sizable = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "NUTs - Network Utility Tools";
             this.nuts_menu.ResumeLayout(false);
